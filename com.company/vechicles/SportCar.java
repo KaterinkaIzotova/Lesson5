@@ -22,8 +22,12 @@ public class SportCar extends com.company.vechicles.Car {
     @Override
     public String toString () {
         String t;
-        t = "Марка: " + mark + " " + "Класс автомобиля: " + class_auto ;
-        System.out.println("t");
+        t = "Марка: " + mark + "\n" + "Класс автомобиля: " + class_auto +
+                "\n" + "Вес автомобиля: " + weight + "\n" + "Водитель, имя: " + driver.getFullName() + "\n"+
+                "Водитель, возраст: " + driver.getAge() + "\n"+ "Водитель, стаж: " + driver.getExperiance() + "\n"+
+                "Мотор, сила: " + motor.getPower() + "\n" + "Мотор, компания: " + motor.getCompany() +  "\n" + "Скорость: " + speed;
+
+        System.out.println(t);
         return t;
     }
 }

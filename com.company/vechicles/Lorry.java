@@ -19,7 +19,7 @@ public class Lorry extends com.company.vechicles.Car {
         t = "Марка: " + mark + "\n" + "Класс автомобиля: " + class_auto +
                 "\n" + "Вес автомобиля: " + weight + "\n" + "Водитель, имя: " + driver.getFullName() + "\n"+
                 "Водитель, возраст: " + driver.getAge() + "\n"+ "Водитель, стаж: " + driver.getExperiance() + "\n"+
-                "\n" + "Мотор: " + motor + "\n" + "Грузоподъемность: " + carrying;
+                "Мотор, сила: " + motor.getPower() + "\n" + "Мотор, компания: " + motor.getCompany() + "\n" + "Грузоподъемность: " + carrying;
         System.out.println(t);
         return t;
     }

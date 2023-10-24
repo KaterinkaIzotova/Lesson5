@@ -1,6 +1,7 @@
 package com.company.professions;
 public class Driver extends Person {
     private String experiance;
+
     public Driver(String fullName, int age, String experiance) {
         super(fullName, age);
         this.experiance = experiance;

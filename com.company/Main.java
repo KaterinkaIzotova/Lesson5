@@ -1,11 +1,9 @@
 package com.company;
-
 import com.company.details.Engine;
 import com.company.professions.Driver;
 import com.company.professions.Person;
 import com.company.vechicles.Lorry;
 import com.company.vechicles.SportCar;
-
 /*
 Создать класс Car в пакете com.company.vehicles,
 Engine в пакете com.company.details
@@ -26,10 +24,10 @@ public class Main {
         Person myPerson = new Person("Ivan Ivanov", 14);
         Driver myDriver = new Driver(myPerson.getFullName(), myPerson.getAge(), "4 года");
         Engine myEngine = new Engine("500", "Mini Cooper");
-        Lorry myLorry = new Lorry("1","2",3,myDriver,myEngine,6);
+        Lorry myLorry = new Lorry("1","2",3,myDriver, myEngine,6);
         myLorry.toString();
 
-        //   SportCar mySportCar = new SportCar();
-        //   mySportCar.toString();
+        SportCar mySportCar = new SportCar("9", "8", 7,myDriver, myEngine,3);
+        mySportCar.toString();
     }
 }
